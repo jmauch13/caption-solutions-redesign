@@ -51,13 +51,18 @@ a, .btn {
 .landing-paragraph {
   position: relative;
   margin-left: 600px;
-  margin-top: -13%;
+  margin-top: -20%;
   z-index: 15;
   font-size: 1.5em;
   color: #0060B0;
   padding-bottom: 70px;
 }
-
+.landing-paragraph a {
+  color: #0060B0;
+}
+.landing-paragraph a:hover {
+  color: gray;
+}
 /*.btn {
   font-size: 20px;
   font-weight: var(--medium);
@@ -181,9 +186,9 @@ a {
 .submenu a {
   font-size: smaller;
 }
-.subitem a {
+/*.subitem a {
   margin-right: 50px;
-}
+}*/
 .logo {
   font-size: 20px;
   padding: 7.5px 10px 7.5px 0;
@@ -493,18 +498,17 @@ a {
   padding: 20px 0;
   border-bottom: 1px solid #E0E0E0;
 }
-
-
-
 .testimonialCol {
   padding-top: 35px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.tContentCol {
+  margin-left: 30px;
 }
 .tContentCol > p:last-child {
   margin-bottom: 0;
 }
-
 .swiperBtnStyle {
 	width: 35px;
 	height: 35px;
@@ -684,7 +688,6 @@ a {
   text-align: center;
   width: 800px;
   margin-left: 22.5%;
-  
 }
 
 .service-header {
@@ -694,6 +697,9 @@ a {
   font-family: monospace;
   font-size: 2.4em;
   font-weight: bold;
+}
+.req-link:hover {
+  filter: opacity(80%);
 }
 
 
@@ -716,21 +722,22 @@ a {
   padding-left: 35px;
 }
 .socialCol img {
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 30px;
+  max-height: 30px;
   -o-object-fit: contain;
   object-fit: contain;
 }
+.socialCol img:hover {
+  filter: opacity(80%);
+}
 .created {
-  font-size: 1.0em;
+  font-size: 0.8em;
   color: #0060B0;
 }
 .footer-logo {
-  font-size: 1.3em;
+  font-size: 1.0em;
   color: #0060B0;
-}
-.made-by {
-  margin-top: -15px;
+  margin-top: -5px;
 }
 
 /* services page */
@@ -1055,26 +1062,29 @@ a {
 }
 
 @media (max-width: 576px) {
-  /*.col1 {
-      width: 200px;
-  }*/
-
-  .steno img {
-      display: flex;
-      margin-top: 5px;
-      margin-right: 8px;
-      max-width: 450px;
-      max-height: 100px;
-      opacity: .4;
-      border: 4px solid gray;
-      box-shadow: 25px 25px 50px 25px gray;
-      border-radius: 15px;
+  .nav {
+    max-width: 100%;
   }
-
+  #mission {
+    max-height: 300px;
+    max-width: 200px;
+  }
+  #steno-img {
+      display: none;
+  }
+  .req-link {
+    display: flex;
+    margin-left: 80px;
+    max-width: 200px;
+    max-height: 80px;
+    margin-top: -60%;
+  }
   .landing-row {
       margin-top: 20px;
   }
-  
+  .testimonialCol {
+    display: none;
+  }
   .logo {
       display: flex;
       justify-content: center;
@@ -1091,7 +1101,7 @@ a {
   }
 
   .landing-paragraph {
-    margin-left: auto;
+    margin-left: 20px;
     margin-top: 20px;
   }
 
@@ -1115,7 +1125,19 @@ a {
       border: 4px solid gray;
       box-shadow: 25px 25px 50px 25px gray;
   }
-
+  .about-header {
+    margin-top: 60px;
+  }
+  .about-header .btn {
+    max-width: 150px;
+    max-height: 75px;
+  }
+  .request-btn {
+    display: block;
+    max-height: 100px;
+    max-width: 200px;
+    margin-right: -25%;
+  }
   .quick-links {
       display: inline;
       background-color: lightgray;
