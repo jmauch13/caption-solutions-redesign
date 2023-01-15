@@ -48,19 +48,19 @@ for (let item of items) {
 document.addEventListener("click", closeSubmenu, false);
 
 
-$('.navToggle').on('click', function (e) {
-  e.preventDefault();
-  $('body').toggleClass('navToggleActive');
-});
+//$('.navToggle').on('click', function (e) {
+  //e.preventDefault();
+  //$('body').toggleClass('navToggleActive');
+//});
 
 
-$(window).scroll(function(){
-  if ($(this).scrollTop() > 10) {
-    $('body').addClass('fixedHeader');
-  } else {
-    $('body').removeClass('fixedHeader');
-  }
-});
+///$(window).scroll(function(){
+  ///if ($(this).scrollTop() > 10) {
+    ///$('body').addClass('fixedHeader');
+  ///} else {
+    ///$('body').removeClass('fixedHeader');
+  ///}
+///});
 
 
 var swiper = new Swiper(".testimonialSwiper", {
