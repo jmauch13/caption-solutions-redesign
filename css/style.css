@@ -6,13 +6,6 @@ font-family: 'Heebo', sans-serif; */
   --primaryDarkColor: gray;
   --primaryHoverColor: lightgray;
   --secondaryColor: white;
-  /*--baseFont: 'Heebo', sans-serif;
-  --titleFont: 'Courier Prime', monospace;
-  --regular: 400;
-  --medium: 500;
-  --bold: 700;
-  --black: 900;
-  --lightBg: #F1F1F1;*/
 }
 html {
   scroll-behavior: smooth;
@@ -111,6 +104,7 @@ a {
 .item a:hover::after {
   color: gray;
 }
+
 /* Mobile menu */
 .menu {
   display: flex;
@@ -149,6 +143,7 @@ a {
   /* divider between buttons and menu links */
   border-bottom: 2px gray solid;
 }
+
 /* Submenu up from mobile screens */
 .submenu {
   display: none;
@@ -220,6 +215,7 @@ a {
     border-color: lightgray;
   }
 }
+
 /* Desktop menu */
 @media all and (min-width: 960px) {
   .menu {
@@ -262,7 +258,6 @@ a {
     cursor: pointer;
   }
 }
-
 /* End Navigation */
 
 .sliderOuter {
@@ -297,7 +292,6 @@ a {
 .swiperBtnStyle {
 	font-weight: bold;
 }
-
 .swiper-button-next.swiperBtnStyle::after, .swiper-button-prev.swiperBtnStyle::after {
   font-size: 16px;
 }
@@ -315,35 +309,30 @@ a {
 }
 
 /* Pages */
-
 .page-header {
-  font-family: monospace;
+  font-family: 'Courgette', cursive;
   margin-top: 175px;
   margin-left: 19.5%;
   text-align: left;
   color: #0060B0;
 }
-
 .page-header h1 {
   font-size: 2.1em;
   font-weight: bold;
-  font-family: monospace;
+  font-family: 'Courgette', cursive;
 }
-
 .page-header p {
   font-size: 2.1em;
-  font-family: monospace;
+  font-family: 'Courgette', cursive;
   font-weight: bold;
 }
-
 .tv-header {
   text-align: center;
   color: #0060B0;
   margin-top: 10px;
 }
-
 .request-header {
-  font-family: monospace;
+  font-family: 'Courgette', cursive;
   font-size: 2.1em;
   font-weight: bold;
   margin-top: 250px;
@@ -351,10 +340,22 @@ a {
   font-size: 2.0em;
   color: #0060B0;
 }
+#request-img {
+  opacity: .2;
+  z-index: 1;
+  width: 35%;
+  margin: auto;
+  display: block;
+  position: relative;
+  height: 265px;
+}
 .request-btn {
   margin-left: 83%;
   margin-top: -7%;
   border: 2px solid gray;
+}
+.request-btn-contact:hover {
+  filter: opacity(85%);
 }
 #bio-req-btn {
   margin-top: -7%;
@@ -402,10 +403,30 @@ a {
 #req-btn-about:hover {
   filter: opacity(85%);
 }
+#btn1 {
+  background-color: #0060B0 !important;
+  border: 2px solid gray;
+  z-index: 98;
+  position: absolute;
+  margin-top: -15%;
+  margin-left: -7%;
+}
+#btn2 {
+  background-color: #0060B0 !important;
+  border: 2px solid gray;
+  z-index: 97;
+  position: absolute;
+  margin-top: -8%;
+  margin-left: -7%;
+}
+#btn1:hover, #btn2:hover {
+  filter: opacity(85%);
+}
 .page-content {
   margin-top: 60px;
   margin-left: 20%;
   margin-right: 20%;
+  padding-bottom: 75px;
   font-size: 1.5em;
   color: #0060B0;
 }
@@ -417,10 +438,10 @@ a {
 }
 .cont-header {
   text-align: center;
-  font-family: monospace;
+  font-family: 'Courgette', cursive;
   color: #0060B0;
   font-size: 2.1em;
-  margin-top: 40px;
+  margin-top: 10px;
   font-weight: bold;
 }
 .contact {
@@ -429,49 +450,49 @@ a {
 }
 .contact p {
   font-size: 2.1em;
-  font-family: monospace;
+  font-family: 'Courgette', cursive;
   font-weight: bold;
   color: #0060B0;
 }
 .address {
+  margin-top: 5px;
   font-size: 1.2em;
 }
-.about-header {
-  margin-top: 50px;
-  text-align: center;
-  font-size: 2.8em;
-  font-family: monospace;
-  font-weight: bold;
-  color: #0060B0;
+.email:hover {
+  filter: opacity(85%);
 }
-.about-header h1 {
-  font-family: monospace;
-  font-size: 2.8;
+.page-req:hover {
+  filter: opacity(85%);
+}
+.about-header {
+  margin-top: -110px;
+  margin-left: 15px;
+  font-size: 2.8em;
+  font-family: 'Courgette', cursive;
   font-weight: bold;
-  text-align: center;
-  margin-top: 5px;
   color: #0060B0;
 }
 .about-content {
   margin-top: 55px;
+  padding-top: 70px;
   max-width: 80%;
   margin-left: 15%;
   margin-right: 15%;
   font-size: 1.5em;
   color: #0060B0;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 .biography {
-  margin-top: 250px;
-  margin-bottom: 30px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 .biography h1 {
-  font-family: monospace;
-  font-size: 2.1em;
+  font-family: 'Courgette', cursive;
+  font-size: 2.8em;
   font-weight: bold;
   margin-top: -55px;
   color: #0060B0;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .biography p {
   font-size: 1.2em;
@@ -479,11 +500,10 @@ a {
   float: right;
   color: rgb(78, 78, 82);
   padding-bottom: 5%;
-
 }
 .name-header {
   font-size: 1.5em;
-  font-family: monospace;
+  font-family: 'Courgette', cursive;
   font-weight: bold;
   color: #0060B0;
 }
@@ -500,9 +520,7 @@ a {
   filter: opacity(80%);
 }
 
-
 /* footer */
-
 .footer-box {
   display: flex;
   flex-direction: row;
@@ -513,6 +531,7 @@ a {
 }
 .text-center {
   text-align: center;
+  font-family: 'Lobster', cursive;
   background-color: #0060B0;
   color: white;
   font-size: 1.6em;
@@ -529,7 +548,7 @@ a {
 }
 .footer-title h2 {
   margin-bottom: 20px;
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 .footer-link-social ul {
   display: flex;
@@ -546,9 +565,15 @@ a {
   height: 35px;
   width: 35px;
 }
+.footer-link-social img:hover {
+  filter: opacity(85%);
+}
 .footer-link a {
   font-size: larger;
   padding: 5px;
+}
+.footer-link a:hover {
+  color: gray;
 }
 .footer-bottom {
   background-color: #0060B0;
@@ -567,8 +592,8 @@ a {
   margin-top: 25px;
   text-align: center;
   color: #0060B0;
-  font-family: monospace;
-  font-size: 2.4em;
+  font-family: 'Courgette', cursive;
+  font-size: 2.8em;
   font-weight: bold;
 }
 .service-container {
@@ -619,39 +644,9 @@ a {
     display: none;
   }
 }
-/*@media (min-width: 768px) {
- 
-  /* Sub nav */
-  /*.subnav-content {
-      padding: 20px 0 ;
-      display: none;
-      background-color:  var(--black);
-  }
-  .subnav-content a {
-      color: white;
-  }
-}*/
-
-/*@media (min-width:992px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-  	max-width: 890px;
-  }
-  .headerCol .container-fluid {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}*/
-@media (min-width:1200px) {
-  /*headerCol .container-fluid {
-    padding-left: 55px;
-    padding-right: 55px;
-  }*/
-}
 
 @media (max-width:1199px) {
-  /*.navCol a {
-  	font-size: 18px;
-  }*/
+  
   .xlTitle {
   	font-size: 40px;
   }
@@ -720,7 +715,6 @@ a {
   .cs1Title {
   	min-height: auto;
   }
-
   .innerPageBannerCol{
   	padding: 120px 0 50px;
   }
@@ -733,55 +727,6 @@ a {
 }
 
 @media (max-width:767px) {
-  /*.navCollapseCol {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 230px;
-    padding: 20px;
-    background: var(--primaryDarkColor);
-    z-index: 99;
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-    -webkit-transition: all 300ms ease-in-out 0s;
-    -o-transition: all 300ms ease-in-out 0s;
-    transition: all 300ms ease-in-out 0s;
-  }
-  .navToggleActive .navCollapseCol {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-  }
-  .navCol {
-  	text-align: left;
-  }
-  .navCol li + li {
-  	padding-left: 0;
-  }
-  .navCol li {
-  	padding: 5px 0;
-  }
-  .navCol li {
-  	display: block;
-  }
-  .navCol a::before {
-    display: none;
-  }
-  .navCol a {
-  	font-size: 16px;
-    color: var(--bs-white);
-  }
-
-  .bannerUserImg {
-  	margin-left: 0;
-  	width: 180px;
-  	height: 180px;
-  }
-  .bannerSection {
-  	padding: 120px 0 50px;
-  }*/
   .tImgCol {
   	margin-right: 0;
   }
@@ -821,23 +766,6 @@ a {
   .innerPageBannerCol {
   	padding: 100px 0 30px;
   }
-  /*.navCol a:hover, .navCol a.active {
-  	color: var(--bs-white);
-    opacity: 1;
-  }
-  .navCol a {
-    opacity: 0.8;
-  }
-  .logoCol img {
-  	width: 50px;
-  }
-  .fixedHeader .headerCol,  .headerCol {
-  	padding: 10px 0;
-  }
-  .logoCol img {
-    width: 70px;
-    height: 40px;
-  }*/
 }
 
 @media(max-width:575px) {
@@ -892,17 +820,136 @@ a {
   }
 }
 
-@media (min-width: 768px) and (max-width: 959px) {
-  #steno img {
-      margin-top: 25px;
-      margin-left: 5px;
-      width: 300px;
-      height: 200px;
-      opacity: .4;
-      border: 4px solid gray;
-      box-shadow: 25px 25px 50px 25px gray;
-      border-radius: 15px;
-  } 
+@media (min-width: 1158px) and (max-width: 1280px) {
+  #steno-img {
+    height: 500px;
+    width: 800px;
+    border-radius: 10px;
+    border: 3px solid gray;
+    box-shadow: 65px -50px 65px rgb(71, 70, 70);
+    opacity: .2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+    position: relative;
+    margin-top: -150%;
+    margin-left: 35%;
+    overflow: hidden
+  }
+  #req-btn-about {
+    margin-left: 80%;
+  }
+  #bio-btn {
+    margin-left: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+  #steno-img {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    border: 3px solid gray;
+    box-shadow: 65px -50px 65px rgb(71, 70, 70);
+    opacity: .2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+    position: relative;
+    margin-top: -150%;
+    margin-left: 37%;
+    overflow: hidden
+  }
+  #mission {
+    margin-top: 185px;
+    margin-left: 15px;
+  }
+  .landing-footer {
+    width: 100%;
+  }
+  .landing-paragraph {
+    position: relative;
+    width: 475px;
+    margin-left: 350px;
+    margin-top: -36%;
+    z-index: 1;
+    font-size: 1.5em;
+    color: #0060B0;
+    padding-bottom: 70px;
+  }
+  .req-link {
+    
+    padding-top: -100px;
+  }
+  .testimonialCol {
+    font-size: larger;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #bio-req-btn {
+    margin-left: 75%;
+  }
+  .kala, .cindy, .jane, .wanda {
+    box-sizing: content-box;
+    text-align: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #req-btn-about {
+    margin-left: 75%;
+  }
+  #bio-btn {
+    margin-left: 75%;
+  }
+  #req-btn-services {
+    margin-top: 150px;
+    margin-left: 75%;
+  }
+  .page-content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+  #mobile-mission {
+    visibility: hidden;
+  }
+  #mission {
+    visibility: visible;
+  }
+  .landing-paragraph {
+    display: block;
+    margin-top: 10%;
+    z-index: 1;
+  }
+  .req-link {
+    margin-top: 50px;
+  }
+  
+}
+
+
+@media (min-width: 460px) and (max-width: 600px) {
+  
+  .landing-paragraph {
+    display: block;
+    width: 95%;
+    height: 500px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+  }
+  #mobile-mission {
+    height: 50%;
+    width: 40%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -942,13 +989,16 @@ a {
   }
 
   .landing-paragraph {
+    box-sizing: content-box;
     background-color: lightgray;
+    width: auto;
+    height: auto;
     padding-left: 3px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 40px;
+    margin-top: 10px;
     font-size: 1.8em;
-    z-index: -50;
+    z-index: 1;
   }
 
   .landing-footer {
@@ -971,14 +1021,14 @@ a {
       box-shadow: 25px 25px 50px 25px gray;
   }
   .about-header {
-    margin-top: 200px;
+    margin-top: -90px;
   }
   .about-header .btn {
     max-width: 200px;
     max-height: 75px;
   }
   #req-btn-about {
-    margin-top: -10%;
+    margin-top: 150px;
     margin-left: 55%;
   }
   #bio-btn {
@@ -989,8 +1039,8 @@ a {
     margin-right: 5px;
     padding-bottom: 25px;
   }
-  .contact-header {
-    margin-top: 45px;
+  .cont-header {
+    margin-top: 15px;
   }
   .request-btn {
     display: block;
@@ -1018,15 +1068,14 @@ a {
     justify-content: flex-start;
   }
   .request-btn-contact {
-    margin-top: 150px;
-    margin-left: 55%;
+    margin-top: 15px;
   }
   .biography {
     margin-top: 200px;
     margin-bottom: 30px;
   }
   .biography h1 {
-    font-family: monospace;
+    font-family: 'Courgette', cursive;
     font-size: 2.1em;
     font-weight: bold;
     margin-top: -55px;
@@ -1042,7 +1091,7 @@ a {
   }
   .name-header {
     font-size: 1.5em;
-    font-family: monospace;
+    font-family: 'Courgette', cursive;
     font-weight: bold;
     color: #0060B0;
   }
@@ -1081,5 +1130,92 @@ a {
   #req-btn-services {
     margin-left: 55%;
     margin-top: 150px;
+  }
+  .page-content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .center {
+    width: 240px;
+    height: 120px;
+  }
+  .request-header  {
+    margin-top: 200px;
+  }
+  .request-container {
+    margin-top: -80px;
+  }
+  #request-img {
+    width:95%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 200px;
+    margin-bottom: -10px;
+  }
+  #btn1 {
+    background-color: #0060B0 !important;
+    border: 2px solid gray;
+    z-index: 98;
+    position: absolute;
+    margin-top: -25%;
+    margin-left: -13%;
+  }
+  #btn2 {
+    background-color: #0060B0 !important;
+    border: 2px solid gray;
+    z-index: 97;
+    position: absolute;
+    margin-top: -13%;
+    margin-left: -11.5%;
+  }
+}
+
+@media (max-width: 280px) {
+  #mobile-mission {
+    margin-top: 125px;
+  }
+  .menu img {
+    width: 110px;
+    height: 50px;
+  }
+  .landing-paragraph {
+    font-size: 0.9em;
+    margin-top: -330px;
+    z-index: 1;
+  }
+  .testimonialCol {
+    font-size: smaller;
+  }
+  .about-header {
+    font-size: 2.0em;
+    margin-top: -85px;
+  }
+  #req-btn-about {
+    margin-left: 70%;
+    margin-top: 115px;
+    width: 80px;
+    height: 35px;
+  }
+  #bio-btn {
+    margin-left: 70%;
+    width: 70px;
+    height: 30px;
+    font-size: smaller;
+  }
+  .about-content {
+    margin-top: -5px;
+  }
+  .biography {
+    margin-top: 160px;
+  }
+  #bio-req-btn {
+    margin-left: 70%;
+    width: 80px;
+    height: 35px;
+    margin-top: -35px;
+  }
+  .request-header  {
+    margin-top: 100px;
   }
 }
