@@ -11,6 +11,9 @@ html {
   scroll-behavior: smooth;
   z-index: 10;
 }
+nav {
+  z-index: 5000;
+}
 #mission {
   height: 400px;
   margin-left: 5%;
