@@ -956,7 +956,9 @@ a {
 }
 
 @media (max-width: 767px) {
-  
+  nav {
+    margin-top: 70px;
+  }
   #mission {
     display: none;
   }
@@ -969,6 +971,12 @@ a {
   }
   #steno-img {
       display: none;
+  }
+  #req-btn-contact {
+    width: 175px;
+  }
+  .page-req {
+    width: 175px;
   }
   .req-link {
     display: flex;
@@ -1031,8 +1039,9 @@ a {
     max-height: 75px;
   }
   #req-btn-about {
-    margin-top: 150px;
+    margin-top: 170px;
     margin-left: 55%;
+    width: 175px;
   }
   #bio-btn {
     margin-left: 55%;
@@ -1117,6 +1126,7 @@ a {
   }
   #bio-req-btn {
     margin-left: 55%;
+    width: 175px;
   }
   .service-container {
     display: block;
@@ -1132,7 +1142,8 @@ a {
   }
   #req-btn-services {
     margin-left: 55%;
-    margin-top: 150px;
+    margin-top: 175px;
+    width: 175px;
   }
   .page-content {
     width: 90%;
