@@ -956,9 +956,7 @@ a {
 }
 
 @media (max-width: 767px) {
-  nav {
-    margin-top: 50px;
-  }
+  
   #mission {
     display: none;
   }
